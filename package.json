@@ -5,17 +5,34 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@mdx-js/react": "^2.3.0",
+    "@types/node": "^24.10.1",
+    "@types/react": "^18.3.4",
+    "@types/react-dom": "^18.3.0",
     "gatsby": "^5.14.6",
-    "gatsby-plugin-image": "^3.14.0",
+    "gatsby-omni-font-loader": "^2.0.2",
+    "gatsby-plugin-image": "^3.15.0",
     "gatsby-plugin-manifest": "^5.14.0",
-    "gatsby-plugin-sharp": "^5.14.0",
-    "gatsby-source-filesystem": "^5.14.0",
-    "gatsby-transformer-sharp": "^5.14.0",
+    "gatsby-plugin-mdx": "^5.15.0",
+    "gatsby-plugin-sharp": "^5.15.0",
+    "gatsby-plugin-typescript": "^5.15.0",
+    "gatsby-remark-images": "^7.15.0",
+    "gatsby-source-filesystem": "^5.15.0",
+    "gatsby-transformer-sharp": "^5.15.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "typescript": "^5.9.3"
   },
   "devDependencies": {
-    "prettier": "^2.8.8"
+    "@tailwindcss/forms": "^0.5.10",
+    "@tailwindcss/postcss": "^4.1.17",
+    "@tailwindcss/typography": "^0.5.19",
+    "autoprefixer": "^10.4.22",
+    "gatsby-plugin-postcss": "^6.15.0",
+    "postcss": "^8.5.6",
+    "prettier": "^2.8.8",
+    "tailwindcss": "^4.1.17"
   },
   "keywords": [
     "gatsby"
@@ -24,11 +41,15 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "dev": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,css}\"",
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "engines": {
+    "node": ">=18 <21"
   },
   "repository": {
     "type": "git",
