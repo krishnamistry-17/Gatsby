@@ -23,7 +23,7 @@ export default function Header({ siteTitle = "My Gatsby Site" }: HeaderProps) {
         </Link>
         <nav style={{ display: "flex", gap: "0.75rem" }}>
           <Link to="/about">About</Link>
-          <Link to="/blog">Blog</Link>
+          <Link to="/blog/">Blog</Link>
           <Link to="/contact">Contact</Link>
         </nav>
       </div>
